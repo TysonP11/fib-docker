@@ -5,22 +5,19 @@
             "name": "client",
             "image": "thsnphm11/multi-client",
             "hostname": "client",
-            "essential": false,
-            "memory": 128
+            "essential": false
         },
         {
             "name": "server",
             "image": "thsnphm11/multi-server",
             "hostname": "api",
-            "essential": false,
-            "memory": 128
+            "essential": false
         },
         {
             "name": "worker",
             "image": "thsnphm11/multi-worker",
             "hostname": "worker",
-            "essential": false,
-            "memory": 128
+            "essential": false
         },
         {
             "name": "nginx",
@@ -36,8 +33,7 @@
             "links": [
                 "client",
                 "server"
-            ],
-            "memory": 128
+            ]
         }
     ]
 }
